@@ -10,7 +10,7 @@ low-latency serving path — not just training accuracy, but the effect of INT8
 quantization on the decision boundary, and the operational cost of running it
 as a versioned, logged service rather than a notebook.
 
-**Live demo:** `https://<your-app-name>.onrender.com`
+**Live demo:** `https://telemetry-anomaly-detection-service.onrender.com`
 *(Render's free tier spins down after 15 minutes idle — the first request after
 that will take ~30-60s to wake up.)*
 
