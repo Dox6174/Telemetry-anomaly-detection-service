@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+*.pt
+data/X_*.npy
+.git
