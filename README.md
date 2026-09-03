@@ -136,21 +136,16 @@ by 5σ. This is the actual sensitivity boundary of the detector, set by the
 99th-percentile threshold chosen during calibration — a lower percentile
 would catch smaller deviations at the cost of a higher false positive rate.
 
-**Held-out false positive rate:** `[fill in from your corrected train.py run
-— the number measured on the held-out eval split, not the calibration split
-it was tuned on]`
+**Held-out false positive rate:** `2.00%`
 
 **Latency (FP32 vs INT8, CPU, 500 runs):**
 
 | Model | Mean | p50 | p95 | p99 |
 |---|---|---|---|---|
-| FP32 | `[fill in]` ms | `[fill in]` ms | `[fill in]` ms | `[fill in]` ms |
-| INT8 | `[fill in]` ms | `[fill in]` ms | `[fill in]` ms | `[fill in]` ms |
+| FP32 | `0.019` ms | `0.015` ms | `0.032` ms | `0.043` ms |
+| INT8 | `0.023` ms | `0.020` ms | `0.025` ms | `0.052` ms |
 
-`[One sentence: state whether quantization gave a meaningful latency win here,
-and if it was modest, note that this model is small enough that
-ONNXRuntime/Python call overhead likely dominates raw compute — a larger
-conv-based model would be expected to show a bigger INT8 win.]`
+`[Quantization gives a very modest change/overhead in this case, this is due to the fact that the model is small enough(~21k parameters) that ONNXRuntime/Python call overhead likely dominates raw compute — a larger conv-based model would be expected to show a bigger INT8 win.]`
 
 ---
 
