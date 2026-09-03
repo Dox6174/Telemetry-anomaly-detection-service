@@ -230,7 +230,7 @@ all SQL is behind the helper functions in `db.py`.
 
 ---
 
-## Limitations and what I'd do with more time
+## Limitations and Further Extensions
 
 - **Threshold selection is a single fixed percentile**, not a tuned
   operating point. The right next step is a full ROC/precision-recall sweep
